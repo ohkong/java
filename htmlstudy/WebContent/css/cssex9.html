@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- /WebContent/css/cssex9.html -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>상태 선택자2</title>
+<style type="text/css">
+/* input 태그에 입력 가능한 경우 배경색을 노란색으로 설정, 글자크기를 30px*/
+input:enabled{background-color:yellow;font-size:30px;}
+/* input 태그에 입력 가능한 경우 선택된경우 배경색을 분홍색으로 설정, 글자크기를 15px*/
+input:focus{background-color:pink;font-size:15px;}
+/* input 태그에 입력 불가능한 경우 배경색을 검정색, 글씨를 흰색으로 설정*/
+input:disabled{background-color:black;color:white;}
+</style>
+</head>
+<body>
+<h2>입력이 가능한 input 태그</h2>
+<input type="text">
+<h2>입력이 불가능한 input태그</h2>
+<input type="text" disabled="disabled" value="입력불가능">
+</body>
+</html>

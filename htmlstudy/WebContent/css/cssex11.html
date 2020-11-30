@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- /WebContent/css/cssex11.html
+ 반응형 웹: 브라우저의 크기에 따라서 자동으로 화면이 재배치 되도록 구현함.
+ -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>@Media 태그예제</title>
+<style type="text/css">
+@media ( max-width :499px) { /* 화면크기가 최대 499까지 */
+	body {
+		background: red;
+	}
+}
+@media ( min-width :500px) and (max-width:799px) {
+	body {
+		background: green;
+	}
+}
+@media ( min-width :800px) {
+	body {
+		background: blue;
+	}
+}
+</style>
+</head>
+<body>
+	<h1>@media 태그예제</h1>
+	<p>화면의 크기 별로 바탕색이 달라집니다.</p>
+</body>
+</html>

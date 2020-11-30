@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- /WebContent/css/cssex10.html -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>z-index 속성</title>
+<style type="text/css">
+/*
+ z-index 속성 : 숫자값이 크면 위쪽에 배치됨. 음수사용가능
+					position 속성과 함께 사용해야 함
+		position 속성
+		1. static : 차례대로 배치. 기본값. z-index 속성 사용불가.
+		2. relative : 앞의 요소의 상대 좌표
+		3. fixed : 절대 좌표. 기준점 브라우저 기준. 스크롤시 화면이 고정.
+		4. absolute : 절대 좌표. 기준이 document 임.
+*/
+/* div 태그를 가로200px,세로200px,테두리:굵기1px 실선, 검정색 */
+div{width:200px;height:200px;border:1px solid black;
+ /*borde-width:1px;border-style:solid;border-color:black;*/}
+ .p0{z-index:100;  /* z-index 속성이 허용 안됨. */
+ position:fixed;top:0pt;left:0pt;
+ background-color:pink;cursor:crosshair;}
+ .p1{z-index:1;
+  position:fixed;top:10pt;right:0pt;
+  background-color:yellow; cursor:crosshair;}
+ .p2{z-index:4;
+  position:relative;top:100pt;left:10pt;
+  background-color:gray;cursor:pointer;}
+  .p3{z-index:2;
+  position:absolute;bottom:10pt;right:100pt;
+  background-color:blue;cursor:move;}
+  .p4{z-index:3;
+  position:fixed;bottom:10pt;right:100pt;
+  background-color:red;cursor:wait;}
+</style>
+</head>
+<body>
+<!-- 스타일의 내장방식보다 바디에서의 인라인 방식이 우선 -->
+<div style="position:absolute;left:0px;top:0px;width:500px;height:700px;">
+<div class="p0">p0 box</div>
+<div class="p1">p1 box</div>
+<div class="p2">p2 box</div>
+<div class="p3">p3 box</div>
+<div class="p4">p4 box</div>
+</div>
+</body>
+</html>

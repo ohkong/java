@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- WebContent/htmlex6.html 파일입니다. -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>표 만들기 태그 : table, tr, td</title>
+</head>
+<body>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>header1</th>
+				<th>header2</th>
+				<th>header3</th>
+			</tr>
+		</thead>
+		<today>
+		<tr>
+			<td>data1</td>
+			<td>data2</td>
+			<td>data3</td>
+		</tr>
+		<tr>
+			<td>food1</td>
+			<td>food2</td>
+			<td>food3</td>
+		</tr>
+		</today>
+	</table>
+	<br>
+	<table border="1" style="border-collapse: collapse;">
+		<tr>
+			<th>header1</th>
+			<th>header2</th>
+			<th>header3</th>
+		</tr>
+		<tr>
+			<td>data1</td>
+			<td>data2</td>
+			<td>data3</td>
+		</tr>
+		<tr>
+			<td>food1</td>
+			<td>food2</td>
+			<td>food3</td>
+		</tr>
+	</table>
+	<br>
+	<table border="1" style="border-collapse: collapse;">
+		<tr>
+			<th>header1</th>
+			<th>header2</th>
+			<th>header3</th>
+		</tr>
+		<tr>
+			<td rowspan="2">data1</td>
+			<td colspan="2">data2</td>
+		</tr>
+		<tr>
+			<td>food2</td>
+			<td>food3</td>
+		</tr>
+	</table>
+	<br>
+	<!-- rowspan="2" : 2행에 걸쳐서 셀을 지정
+		 colsapn="2" : 2열에 걸쳐서 셀을 지정 -->
+</body>
+</html>

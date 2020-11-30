@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- /WebContent/css/cssex3.html 
+ 웹표준에서는 id속성은 페이지에서 유일하다고 가정함.
+ 	class 속성은 분류(그룹)을 의미함. 중복가능.
+-->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>class 속성 선택자</title>
+<style type="text/css">
+	.select{color:red;}
+	.select2{color:blue;}
+	input[type=text] {background:green;}
+	input[type=password] {background:blue;}
+	#yellow{background:yellow;}
+</style>
+</head>
+<body>
+<ul>
+	<li class="select">사과</li>
+	<li class="select2">바나나</li>
+	<li class="select">오렌지</li>
+	<li class="select2">감</li>
+</ul>
+<form>
+	<input type="text"><!-- 배경을 초록 -->
+	<input type="password"><br><!-- 배경을 파랑 -->
+	<input type="text" id="yellow"><!-- 배경을 노랑 -->
+	<input type="password" id = "yellow"><br>
+</form>
+</body>
+</html>

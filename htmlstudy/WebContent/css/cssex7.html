@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- /WebContent/css/cssex7.html -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>반응선택자 예제</title>
+<style type="text/css">
+h1.a1 {
+	color: red
+}
+
+h1.b1 {
+	background: black;
+}
+/*h1태그로 마우스 커서가 이동하면 글자색을 흰색으로 설정*/
+h1:hover {
+	color: white;
+}
+/*h1태그에서 마우스클릭시 이동하면 글자색을 파란색으로 설정*/
+h1:active {
+	color: blue;
+}
+/* link : a 태그의 초기상태. 방문한적이 없는 링크인 경우*/
+a:link{color:blue;}
+/* visited : a 태그로 방문한적이 있는 링크인 경우*/
+a:visited{color:red;}
+/* a 태그의 class 속성값이 default인 경우 방문한 사이트인경우 글자색을 green*/
+a.default:visited{color:green;} 
+/* a 태그의 class 속성값이 color인 경우 방문한 사이트인경우 글자색을 navy*/
+ a.color:visited{color:navy;}
+</style>
+</head>
+<body>
+	<h1>반응 선택자 연습</h1>
+	<table>
+		<tr>
+			<td>마우스를 올리면...<br> <b>기본값</b><br> <a href="http://www.google.com" class="default">구글</a>
+				<hr> <a href="http://www.google.com" class="color">구글</a>
+			</td>
+		</tr>
+	</table>
+	<h1 class="a1 b1">class 속성 a1 b1</h1>
+	<h1 class="a1">class 속성 a1</h1>
+	<h1 class="b1">class 속성 b1</h1>
+</body>
+</html>

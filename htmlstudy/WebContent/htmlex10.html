@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- WebContent/htmlex10.html 파일입니다. -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>값을 입력 받을 수 있는 태그 : input 태그</title>
+</head>
+<body>
+<form>  <!-- input 태그들은 fomr 태그의 하위태그로 있어야함.(서버연결시) -->
+	<input type="text" name="name" value="text"><br>
+	<input type="password" name="password" value="password"><br>
+	<input type="checkbox" name="cbox" value="1">1
+	<input type="checkbox" name="cbox" value="2">2<br>
+	<input type="radio" name="radio1" value="1">radio1
+	<input type="radio" name="radio1" value="2">radio2<br>
+	<input type="radio" name="radio2" value="1">radio1
+	<input type="radio" name="radio2" value="2">radio2<br>
+	<input type="button" value="button"><br>
+	<input type="reset" value="reset"><br><!-- 초기화면 설정 -->
+	<!-- 서버로 페이지를 재요청 -->
+	<input type="submit" value="submit"><br>
+	<hr>
+	<select name="menu1">
+	<option>김밥</option><option>떡볶이</option>
+	<option>어묵</option><option>순대</option>
+	</select>
+	<select name="menu1" multiple="mutiple">
+	<option>김밥</option><option>떡볶이</option>
+	<option>어묵</option><option>순대</option>
+	</select>
+	<select name="menu3">
+	<optgroup label="분식">
+	<option>김밥</option><option>떡볶이</option>
+	<option>어묵</option><option>순대</option>
+	</optgroup>
+	<optgroup label="중식">
+	<option>짜장면</option><option>짬뽕</option>
+	<option>탕수육</option><option>잡채밥</option>
+	</optgroup>
+	</select>
+</form>
+</body>
+</html>
