@@ -1,0 +1,18 @@
+파일에 예외 메시지 저장하기java.lang.Exception: 파일에 예외 메시지 저장하기
+	at chap18.FileOutputStreamEx2.secondMethod(FileOutputStreamEx2.java:21)
+	at chap18.FileOutputStreamEx2.firstMethod(FileOutputStreamEx2.java:17)
+	at chap18.FileOutputStreamEx2.main(FileOutputStreamEx2.java:13)
+Wed Nov 04 09:21:36 KST 2020: ======
+
+파일에 예외 메시지 저장하기java.lang.Exception: 파일에 예외 메시지 저장하기
+	at chap18.FileOutputStreamEx2.secondMethod(FileOutputStreamEx2.java:21)
+	at chap18.FileOutputStreamEx2.firstMethod(FileOutputStreamEx2.java:17)
+	at chap18.FileOutputStreamEx2.main(FileOutputStreamEx2.java:13)
+Wed Nov 04 09:21:44 KST 2020: ======
+
+파일에 예외 메시지 저장하기java.lang.Exception: 파일에 예외 메시지 저장하기
+	at chap18.FileOutputStreamEx2.secondMethod(FileOutputStreamEx2.java:21)
+	at chap18.FileOutputStreamEx2.firstMethod(FileOutputStreamEx2.java:17)
+	at chap18.FileOutputStreamEx2.main(FileOutputStreamEx2.java:13)
+Sun Nov 08 16:24:50 KST 2020: ======
+
